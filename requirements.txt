@@ -1,0 +1,11 @@
+numpy
+pandas
+h5py
+scikit-learn
+matplotlib
+tqdm
+torch
+torch-geometric
+scipy
+scikit-bio
+umap-learn
