@@ -12,7 +12,7 @@ This folder contains MATLAB scripts that generate ecologically grounded syntheti
 Both scripts reference additional dependencies that are not in this repository yet:
 
 1) **Interaction matrix**
-- `fake_A_53_dHOMO.csv` (or your inferred interaction matrix)
+- `Mij.csv` (or your inferred interaction matrix)
 
 2) **MATLAB helper functions**
 - a `func/` folder (e.g., RK4 solver, gLV helpers, labeling utilities)
