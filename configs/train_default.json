@@ -1,0 +1,81 @@
+{
+    "data": {
+        "h5_path": "data/sim/train/FMT_structured_data.h5",
+        "adjacency_path": "data/adjacency/fake_A_53_dHOMO.csv",
+        "cdiff_label_path": "data/sim/train/csv_reports/Cdiff_labels_table.csv",
+        "donor_final_path": "data/sim/train/csv_reports/donor_final_abundance.csv",
+        "receptor_ts_group": "/recipients",
+        "sampling": {
+            "mode": "random",
+            "num_samples": 5
+        },
+        "topology_corruption": {
+            "mode": "none",
+            "rates": {
+                "train": 0.0,
+                "val": 0.0,
+                "test": 0.0
+            }
+        },
+        "new_h5_path": null,
+        "new_cdiff_label_path": null,
+        "new_donor_final_path": null,
+        "new_receptor_ts_group": "/recipients"
+    },
+    "training": {
+        "seed": 42,
+        "batch_size": 128,
+        "epochs": 150,
+        "lr": 0.0001,
+        "weight_decay": 1e-05,
+        "noise": {
+            "train": 0.0,
+            "val": 0.0,
+            "test": 0.0
+        },
+        "use_dm_noise": true,
+        "noise_theta": {
+            "train": 0.0,
+            "val": 0.0,
+            "test": 0.0
+        },
+        "split": {
+            "test": 0.2,
+            "val": 0.5
+        },
+        "sparsity": {
+            "train": [
+                1,
+                1
+            ],
+            "val": [
+                1,
+                1
+            ],
+            "test": [
+                1,
+                1
+            ]
+        }
+    },
+    "model": {
+        "dynamics": {
+            "input_dim": 1,
+            "embed_dim": 64,
+            "layers": 2,
+            "heads": 4
+        },
+        "topology": {
+            "input_dim": 64,
+            "hidden_dim": 64,
+            "layers": 2
+        },
+        "embed_dim": 64,
+        "donor_dim": 1,
+        "topology_type": "original"
+    },
+    "output": {
+        "root_dir": "experiments",
+        "run_name": "microlever_demo"
+    }
+}

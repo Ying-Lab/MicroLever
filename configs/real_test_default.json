@@ -1,0 +1,34 @@
+{
+    "paths": {
+        "model_weights": "experiments/<run_name>/<timestamp>/models/best_*.pth",
+        "h5_path": "data/real/FMT_real_data.h5",
+        "adjacency_csv": "data/adjacency/fake_A_53_dHOMO.csv",
+        "cdiff_label_csv": "data/real/Cdiff_labels_table.csv",
+        "donor_final_csv": "data/real/donor_final_abundance.csv",
+        "receptor_ts_group": "/recipients"
+    },
+    "model": {
+        "dynamics": {
+            "input_dim": 1,
+            "embed_dim": 64,
+            "layers": 2,
+            "heads": 4
+        },
+        "topology": {
+            "input_dim": 64,
+            "hidden_dim": 64,
+            "layers": 2
+        },
+        "embed_dim": 64,
+        "donor_dim": 1,
+        "desired_seq_len": 3,
+        "topology_type": "no_sign"
+    },
+    "loader": {
+        "batch_size": 128,
+        "down_sample_step": 1,
+        "num_samples": 3,
+        "classification_threshold": 0.5
+    },
+    "output_dir": "results/real_test_run"
+}
