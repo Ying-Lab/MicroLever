@@ -2,7 +2,7 @@
 
 **A dynamic model of longitudinal microbial ecology predicts fecal microbiota transplantation efficacy**
 
-This repository contains code for **MicroLever**, a topology-aware deep learning framework for predicting fecal microbiota transplantation (FMT) efficacy from recipient longitudinal dynamics and donor compositions.
+This repository contains code for **MicroLever**, a deep learning framework for predicting FMT efficacy from longitudinal microbiome dynamics that models FMT as an ecological perturbation.
 
 ## Two-part layout (simulation vs model)
 
